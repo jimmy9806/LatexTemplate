@@ -1,0 +1,122 @@
+\documentclass{report}
+
+\usepackage{fancyhdr}
+\usepackage{extramarks}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amsfonts}
+\usepackage{tikz}
+\usepackage[plain]{algorithm}
+\usepackage{algpseudocode}
+\usepackage{lastpage}
+\usepackage{titlesec}
+%
+% Basic Document Settings
+%
+
+\usepackage{tocloft}
+\usepackage{fmtcount}
+
+\renewcommand\thechapter{\Numberstring{chapter}}
+\setlength\cftchapnumwidth{3em}
+\renewcommand\cftchappresnum{Chapter~}
+\renewcommand{\thesection}{\arabic{chapter}.\arabic{section}}
+\newlength\mylen
+\settowidth\mylen{\bfseries\cftchappresnum\cftchapaftersnum} % extra space
+\addtolength\cftchapnumwidth{\mylen}
+
+\topmargin=-0.45in
+\evensidemargin=0in
+\oddsidemargin=0in
+\textwidth=6.5in
+\textheight=9.0in
+\headsep=0.5in
+
+\linespread{1.1}
+
+\pagestyle{plain}
+
+
+\fancypagestyle{plain}{%
+	\fancyhf{} % clear all header and footer fields
+	\lhead{\includegraphics[width=8em]{ShanghaiTech_Logo.png}}
+	\rhead{\subject}
+	\cfoot{\thepage/\pageref{LastPage}}
+	\renewcommand\headrulewidth{0.4pt}
+	\renewcommand\footrulewidth{0.4pt}}
+
+
+\setlength\parindent{0pt}
+
+
+\setcounter{secnumdepth}{3}
+\newcounter{partCounter}
+
+\setcounter{section}{1}
+
+
+\newenvironment*{Abstract}[1][-1]{
+	 {\centering \LARGE \textbf{Abstract}\\}}
+
+
+\newcommand{\thesisClass}{Thesis Of Bachelor}
+\newcommand{\subject}{Optical Properties of .....}		% Please type your subject here.
+\newcommand{\studentName}{}						% Type your name here.
+\newcommand{\studentID}{}						% Type your student ID here.
+\newcommand{\dateOfAttendence}{}				% Type your date of attendence.
+\newcommand{\college}{}							% Type yoru college name here.
+\newcommand{\major}{}							% Type yoru major here.
+\newcommand{\advisor}{}							% Type yoru advisor's name here.
+
+
+
+%
+% Title Page
+%
+
+\title{
+	\raggedright {\includegraphics[width=10em]{ShanghaiTech_Logo.png}\\}
+	\centering
+    \vspace{2in}
+    \textmd{\textbf{\thesisClass}}\\
+    \normalsize\vspace{0.1in}
+    \vspace{0.1in}
+    \Large
+    {
+   		Subject: \subject\\
+   		Student Name: \studentName\\
+   		Student ID No: \studentID\\
+   		Date Of Attendance: \dateOfAttendence\\
+   		College: \college\\
+   		Major: \major\\
+   		Advisor: \advisor\\ 
+    }
+    \vspace{2.7in}
+}
+
+\author{\tiny Made by Teaching Affairs Office, ShanghaiTech University\\
+		\tiny Data: / / /}
+\date{}
+
+%\renewcommand{\part}[1]{\textbf{\large Part \Alph{partCounter}}\stepcounter{partCounter}\\}
+
+\begin{document}
+
+\maketitle
+\pagebreak
+
+
+\tableofcontents
+\pagebreak
+
+\begin{Abstract}
+	Content..
+\end{Abstract}
+
+\chapter{This is Chapter One}
+\chapter{This is Chapter Two}
+\section{Section ONe}
+\subsection{Sub1}
+
+
+\end{document}
