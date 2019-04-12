@@ -7,25 +7,19 @@
 
   在此特别感谢原作者的创作修改和上海科技大学Geekpie社团成员的修改
 
-# 正确编译并显示参考文献需要以下四步编译！！#
+## For SISTors 
 
-## 第一遍编译#
+If you have make in hand, simply type
 
-`xelatex Thesis.tex`
+`make`
 
-## 第二遍编译
+would suffice. Some default settings are used, see Makefile line 5-9 for details.
 
-`bibtex Thesis`
+However, this configuration is only tested on my machine and comes with no guarantee, you may need to try other \*tex and bib\* to compile successfully.
 
-## 第三遍编译
+## For everyone else
 
-`xelatex Thesis.tex`
-
-## 第四遍编译
-
-`xelatex Thesis.tex`
-
-
+Original repo has scripts provided artratex.bat/artratex.sh and there will be a help info when you run that script, I am assuming you can read :)
 
 # 以下内容为国科大学位论文Readme原文#
 
